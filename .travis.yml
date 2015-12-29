@@ -8,5 +8,4 @@ script:
   - bundle exec rake db:test:prepare
   - bundle exec rake
 before_script:
-  - cp config/database.travis.yml config/database.yml
-  - psql -c 'create database strano_test' -U postgres
+  - psql -c 'create database travisci_test' -U postgres
