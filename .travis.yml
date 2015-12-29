@@ -1,4 +1,7 @@
 language: ruby
+before_install:
+  - gem install bundler
+  - "rm ${BUNDLE_GEMFILE}.lock"
 rvm:
   - 2.2.3
 env:
